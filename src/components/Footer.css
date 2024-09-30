@@ -1,0 +1,127 @@
+
+.footer {
+    background-color: rgb(254 205 211);    
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+    color:black;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    padding: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffd700; 
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+  }
+  
+  .social-icons svg {
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons svg:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  @media (max-width: 992px) {
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .footer-section {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .footer-section h3 {
+      font-size: 18px;
+    }
+  
+    .footer-section ul li a {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .footer-section {
+      padding: 10px;
+    }
+  
+    .footer-section h3 {
+      font-size: 18px;
+    }
+  
+    .footer-section ul li a {
+      font-size: 14px;
+    }
+  
+    .social-icons {
+      font-size: 28px;
+    }
+  }
+  

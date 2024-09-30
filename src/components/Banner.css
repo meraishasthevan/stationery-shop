@@ -1,0 +1,9 @@
+.banner-container{
+    width:90%;
+    margin:auto;
+    margin-top:50px;
+}
+.banner-main img{
+    width:100%;
+    height:auto;
+}

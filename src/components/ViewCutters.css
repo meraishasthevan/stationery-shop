@@ -1,0 +1,89 @@
+.cutters-container {
+    width: 90%;
+    margin: auto;
+    margin-top:45px;
+    
+  }
+  
+  .cutters-banner img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cutters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .cutter-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f3f4f6;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  .cutter-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  }
+  
+  .cutter-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cutter-card:hover .cutter-image {
+    transform: translateY(-5px);
+  }
+  
+  .cutter-details {
+    text-align: center;
+  }
+  
+  .cutter-price {
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .add-to-cart-cutter {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .add-to-cart-cutter:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color:black;
+    border:1px solid black;
+  }
+  
+  @media (max-width: 575px) {
+    .cutter-card {
+      padding: 10px;
+    }
+  
+    .cutter-image {
+      height: 150px;
+    }
+  }
+  
